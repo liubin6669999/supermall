@@ -29,7 +29,8 @@ module.exports = {
       'assets':resolve('src/assets'),
       'components':resolve('src/components'),
       'network':resolve('src/network'),
-      'view':resolve('src/view')
+      'view':resolve('src/view'),
+      // 'swiper':resolve('src/swiper'),
 
     }
   },

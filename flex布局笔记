@@ -1,0 +1,52 @@
+1.把容器变成flex容器：display:flex  /inline - flex
+flex:把当前父容器当作块级容器（不可以有别的元素共一行）
+inline-flex:把当前父容器当作行级容器（可以有别的元素共一行）
+*****注意：但是flex容器里面，一旦设置display:flex或inline - flex，容器里面的item会失去块级、行级属性，全部排在一行****
+flex-flow
+2.应用在flex container上的属性（父容器）
+.flex-flow:本质为flew-direction和flex-warp的缩写
+{
+  用法：flex-flow = row warp
+}
+
+
+.flex-direction:改变子元素排列的方向（默认是横着）
+{
+  属性：row：从左向右排列（默认）  ； row-reverse：从右向左排列；   column：从上向下排列；  column-reverse：从下向上排列
+}
+
+
+.flex-wrap：首先知道：当一行内放不下所有元素时，flex模型会默认将元素大小进行压缩，保证一行能放下
+{
+  属性：nowarp:一行放不完时，让子元素在父容器内换行
+  warp:换行
+}
+
+
+.justify-content:决定元素主轴上位置是居中、偏右、还是偏左
+{
+  属性：flex-start：从start点开始排列(默认)  ; flex-end：从end点开始排列  ;center:居中
+  space-between:按单元格大小等分 ；space-evenly:按间距等分 ；space-around:
+}
+
+
+.align-items：决定子元素在交叉轴上的位置（一般用在单行）
+{
+   属性：normal（默认） = stench（将元素在交叉轴上拉伸到和父容器一样）
+   flex-start：从start点开始排列(默认)  ; flex-end：从end点开始排列  ;center:居中
+   baseline：基线对齐（用时候查文本）
+}
+
+
+.align-content:决定了多行item在交叉轴上的位置
+
+
+
+3.应用在flex items上的属性(子容器)
+.flex
+.flex-grow:与flex差不多，用于平分、均分剩余空间
+.flex-basis
+.flex-shrink：与grow相反，减小子元素大小
+.order :决定item排列的顺序，小的在前
+.align-self:决定单个元素的位置（子元素搞特殊）
+
