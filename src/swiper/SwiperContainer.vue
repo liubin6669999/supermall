@@ -29,8 +29,8 @@ export default {
       loop: true, // 循环模式选项
 
       //解决v-for问题
-      observer:true,
-      observeParents:true,
+      // observer:true,
+      // observeParents:true,
 
       autoplay:true,
       // 如果需要分页器
@@ -55,8 +55,11 @@ export default {
 
 <style scoped>
 .swiper {
-  width: 750px;
-  height: 390px;
+  /*width: 750px;*/
+  /*height: 390px;*/
+  width:100%;margin:0 auto;
+  /*控制swiper组件在navigatebar组件下面*/
+  z-index: 0;
 }
 
 </style>

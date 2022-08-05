@@ -27,6 +27,7 @@ export default {
   methods:{
     titleClick(index){
     this.currentIndex = index
+    this.$emit('titleClick',index)
     }
   }
 }
@@ -37,13 +38,13 @@ export default {
     display: flex;
     font-size: 40px;
     justify-content: center;
-    height: 44px;
+    height: 30px;
     background: #FFFFFF;
   }
   .item{
     flex: 1;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
   }
   .item_active{
     color: var(--color-high-text);
@@ -51,6 +52,6 @@ export default {
   }
   .tab_sticky{
     position: sticky;
-    top: 44px;
+    top: 30px;
   }
 </style>

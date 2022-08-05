@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "iscroll": "^5.2.0",
     "swiper": "^8.3.2",
     "vue": "^2.5.2",
+    "vue-pull-to": "^0.1.8",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

@@ -6,3 +6,12 @@ export function getHomeData(){
     url:'/home/multidata'
   })
 }
+export function getHomeGoodsData(type,page){
+  return require({
+    url:'/home/data',
+    params:{
+      type,
+      page
+    }
+  })
+}

@@ -1,6 +1,7 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div id="app" class="app">
+    <div class="router"><router-view></router-view></div>
+    <div>
     <tab-bar>
       <tab-bar-item path="/Home">
         <div slot="img">
@@ -39,6 +40,7 @@
         <div slot="text">我的</div>
       </tab-bar-item>
     </tab-bar>
+    </div>
   </div>
 
 </template>
@@ -56,4 +58,5 @@ export default {
 
 <style>
 @import url('./assets/css/reset.css');
+
 </style>

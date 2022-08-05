@@ -26,8 +26,9 @@ export default {
   .navigate_bar{
     display: flex;
     /*height: 44px;*/
-    line-height: 44px;
+    line-height: 30px;
     text-align: center;
+    z-index: 1;
   }
   .left right{
     width: 60px;

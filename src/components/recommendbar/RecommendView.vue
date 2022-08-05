@@ -3,7 +3,7 @@
     <div v-for="(item,index) in recommendList" :key="index" class="recommend-item">
       <a :href="item.link">
         <img :src="item.image">
-        <div>{{item.title}}</div>
+        <div class="title">{{item.title}}</div>
       </a>
     </div>
   </div>
@@ -38,6 +38,9 @@ export default {
 .recommend-item img{
   width: 40%;
   height: 40%;
+}
+.title{
+  font-size: 10px;
 }
 
 </style>
